@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.20)
+project(blackjack)
+add_compile_options(-Wall -std=c++20)
+set(CMAKE_CXX_STANDARD 20)
+add_executable(blackjack main.cpp Card.cpp Hand.cpp GenericPlayer.cpp Deck.cpp Player.cpp House.cpp Game.cpp)
+target_include_directories(blackjack PRIVATE ${CMAKE_SOURCE_DIR}/include)
